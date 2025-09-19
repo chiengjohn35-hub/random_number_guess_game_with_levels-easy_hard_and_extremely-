@@ -64,9 +64,11 @@ if __name__=="__main__":
     main()
     #create a user input to ask if they want play again after the loop ended, if so call the main function else
     #use sys.exit() to exit the game
-    play_again=input("do you want to play again? (YES/NO) :").strip()
-    if play_again.lower().startswith("y"):
-        main()
-    else:
-        sys.exit("Thanks for playing, Have a nice day!")
+    while True:
+        play_again=input("do you want to play again? (YES/NO) :").strip()
+        if play_again.lower().startswith("y"):
+            main()
+        else:
+            sys.exit("Thanks for playing, Have a nice day!")
+        
 
